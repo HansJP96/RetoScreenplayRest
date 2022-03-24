@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Habilidades de pokemon</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Habilidades de pokemon</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Habilidades de pokemon</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.447s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Pokemon que tiene la habilidad"></a>
+<h3 class="failures">Pokemon que tiene la habilidad</h3>
+<span class="code">
+<pre>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `co.com.sofka.models.pokeapi.singleability.SingleAbility` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)&quot;{
+    &quot;effect_changes&quot;: [
+        {
+            &quot;effect_entries&quot;: [
+                {
+                    &quot;effect&quot;: &quot;Hat im Kampf keinen Effekt.&quot;,
+                    &quot;language&quot;: {
+                        &quot;name&quot;: &quot;de&quot;,
+                        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+                    }
+                },
+                {
+                    &quot;effect&quot;: &quot;Has no effect in battle.&quot;,
+                    &quot;language&quot;: {
+                        &quot;name&quot;: &quot;en&quot;,
+                     &quot;[truncated 31318 chars]; line: 2, column: 5]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1349)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1415)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:47)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:204)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:216)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:57)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:220)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:166)
+	at net.serenitybdd.rest.decorators.ResponseDecorated.as(ResponseDecorated.java:63)
+	at co.com.sofka.question.pokeapi.SingleAbilityResponse.answeredBy(SingleAbilityResponse.java:19)
+	at co.com.sofka.stepdefinition.pokeapi.SingleAbilityStepDefinition.observaQueUnoDeLosPokemonQueTieneEsaHabilidadEs(SingleAbilityStepDefinition.java:42)
+	at ✽.observa que uno de los pokemon que tiene esa habilidad es &quot;gloom&quot;(file:///C:/Users/S410p%20Touch/Documents/5.GuardarLenguajes/Carpeta_Java/Sofka/RetoScreenplay/src/test/resources/features/pokeapi/singleAbility.feature:12)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Pokemon que tiene la habilidad</td>
+<td class="failures">8.447s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>{
+    &quot;effect_changes&quot;: [
+        {
+            &quot;effect_entries&quot;: [
+                {
+                    &quot;effect&quot;: &quot;Hat im Kampf keinen Effekt.&quot;,
+                    &quot;language&quot;: {
+                        &quot;name&quot;: &quot;de&quot;,
+                        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+                    }
+                },
+                {
+                    &quot;effect&quot;: &quot;Has no effect in battle.&quot;,
+                    &quot;language&quot;: {
+                        &quot;name&quot;: &quot;en&quot;,
+                        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+                    }
+                }
+            ],
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;black-white&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/11/&quot;
+            }
+        }
+    ],
+    &quot;effect_entries&quot;: [
+        {
+            &quot;effect&quot;: &quot;Attacken die Schaden verursachen haben mit jedem Treffer eine 10% Chance das Ziel zurückschrecken zu lassen, wenn die Attacke dies nicht bereits als Nebeneffekt hat.\n\nDer Effekt stapelt nicht mit dem von getragenen Items.\n\nAußerhalb vom Kampf: Wenn ein Pokémon mit dieser Fähigkeit an erster Stelle im Team steht, tauchen wilde Pokémon nur halb so oft auf.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;short_effect&quot;: &quot;Mit jedem Treffer besteht eine 10% Chance das Ziel zurückschrecken zu lassen.&quot;
+        },
+        {
+            &quot;effect&quot;: &quot;This Pokémon's damaging moves have a 10% chance to make the target flinch with each hit if they do not already cause flinching as a secondary effect.\n\nThis ability does not stack with a held item.\n\nOverworld: The wild encounter rate is halved while this Pokémon is first in the party.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;short_effect&quot;: &quot;Has a 10% chance of making target Pokémon flinch with each hit.&quot;
+        }
+    ],
+    &quot;flavor_text_entries&quot;: [
+        {
+            &quot;flavor_text&quot;: &quot;Helps repel wild POKéMON.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ruby-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/5/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Helps repel wild POKéMON.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;emerald&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/6/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Helps repel wild POKéMON.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;firered-leafgreen&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/7/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench helps keep\nwild Pokémon away.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;diamond-pearl&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/8/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench helps keep\nwild Pokémon away.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;platinum&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/9/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench helps keep\nwild Pokémon away.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;heartgold-soulsilver&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/10/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;La puanteur peut\neffrayer l’adversaire.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;black-white&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/11/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench may cause\nthe target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;black-white&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/11/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench may cause\nthe target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;black-2-white-2&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/14/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????????\n??????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?? ??? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;La puanteur peut effrayer\nl’adversaire.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt den Gegner durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Es posible que el rival retroceda\npor el mal olor.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore\nfa tentennare i nemici.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench may cause\nthe target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;???????\n??????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;x-y&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/15/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????????\n??????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?? ??? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;La puanteur peut effrayer\nl’adversaire.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt den Gegner durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Es posible que el rival retroceda\npor el mal olor.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore\nfa tentennare i nemici.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;The stench may cause\nthe target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;???????\n??????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;omega-ruby-alpha-sapphire&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/16/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????????????\n???????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??? ???\n???? ? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hant&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/4/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Le Pokémon émet une odeur si nauséabonde\nqu’il peut effrayer sa cible.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt das Ziel beim Angriff eventuell durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Debido al mal olor que emana, al atacar al rival puede\nhacerlo retroceder.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore emesso dal Pokémon\nfa tentennare i nemici quando attacca.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;By releasing stench when attacking, this Pokémon\nmay cause the target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;????????????????\n????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hans&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/12/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sun-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/17/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????????????\n???????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??? ???\n???? ? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hant&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/4/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Le Pokémon émet une odeur si nauséabonde\nqu’il peut effrayer sa cible.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt das Ziel beim Angriff eventuell durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Debido al mal olor que emana, al atacar al rival puede\nhacerlo retroceder.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore emesso dal Pokémon\nfa tentennare i nemici quando attacca.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;By releasing stench when attacking, this Pokémon\nmay cause the target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;????????????????\n????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hans&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/12/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;ultra-sun-ultra-moon&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/18/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????????????\n???????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??? ???\n???? ? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hant&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/4/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Le Pokémon émet une odeur si nauséabonde\nqu’il peut effrayer sa cible.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt das Ziel beim Angriff eventuell durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Debido al mal olor que emana, al atacar al rival puede\nhacerlo retroceder.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore emesso dal Pokémon\nfa tentennare i nemici quando attacca.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;By releasing stench when attacking, this Pokémon\nmay cause the target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;????????????????\n????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hans&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/12/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;lets-go-pikachu-lets-go-eevee&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/19/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????????????\n???????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??? ???\n???? ? ???\n??? ?? ??.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;?????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hant&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/4/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Le Pokémon émet une odeur si nauséabonde\nqu’il peut effrayer sa cible.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Lässt das Ziel beim Angriff eventuell durch Gestank\nzurückschrecken.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;Puede amedrentar al rival al atacarlo debido al mal olor\nque emana.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;A volte il cattivo odore emesso dal Pokémon\nfa tentennare i nemici quando attacca.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;By releasing stench when attacking, this Pokémon\nmay cause the target to flinch.&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;????????????????\n????????????\n????????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        },
+        {
+            &quot;flavor_text&quot;: &quot;??????????\n???????\n?????????&quot;,
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hans&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/12/&quot;
+            },
+            &quot;version_group&quot;: {
+                &quot;name&quot;: &quot;sword-shield&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/version-group/20/&quot;
+            }
+        }
+    ],
+    &quot;generation&quot;: {
+        &quot;name&quot;: &quot;generation-iii&quot;,
+        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/generation/3/&quot;
+    },
+    &quot;id&quot;: 1,
+    &quot;is_main_series&quot;: true,
+    &quot;name&quot;: &quot;stench&quot;,
+    &quot;names&quot;: [
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja-Hrkt&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/1/&quot;
+            },
+            &quot;name&quot;: &quot;?????&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ko&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/3/&quot;
+            },
+            &quot;name&quot;: &quot;??&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hant&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/4/&quot;
+            },
+            &quot;name&quot;: &quot;??&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;fr&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/5/&quot;
+            },
+            &quot;name&quot;: &quot;Puanteur&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;de&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
+            },
+            &quot;name&quot;: &quot;Duftnote&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;es&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/7/&quot;
+            },
+            &quot;name&quot;: &quot;Hedor&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;it&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/8/&quot;
+            },
+            &quot;name&quot;: &quot;Tanfo&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;en&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/9/&quot;
+            },
+            &quot;name&quot;: &quot;Stench&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;ja&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/11/&quot;
+            },
+            &quot;name&quot;: &quot;?????&quot;
+        },
+        {
+            &quot;language&quot;: {
+                &quot;name&quot;: &quot;zh-Hans&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/12/&quot;
+            },
+            &quot;name&quot;: &quot;??&quot;
+        }
+    ],
+    &quot;pokemon&quot;: [
+        {
+            &quot;is_hidden&quot;: true,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;gloom&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/44/&quot;
+            },
+            &quot;slot&quot;: 3
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;grimer&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/88/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;muk&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/89/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: true,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;koffing&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/109/&quot;
+            },
+            &quot;slot&quot;: 3
+        },
+        {
+            &quot;is_hidden&quot;: true,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;weezing&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/110/&quot;
+            },
+            &quot;slot&quot;: 3
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;stunky&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/434/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;skuntank&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/435/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;trubbish&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/568/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;garbodor&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/569/&quot;
+            },
+            &quot;slot&quot;: 1
+        },
+        {
+            &quot;is_hidden&quot;: false,
+            &quot;pokemon&quot;: {
+                &quot;name&quot;: &quot;garbodor-gmax&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/10207/&quot;
+            },
+            &quot;slot&quot;: 1
+        }
+    ]
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 24/03/2022, 3:01:22 p. m.</p>
+</div>
+</div>
+</body>
+</html>
