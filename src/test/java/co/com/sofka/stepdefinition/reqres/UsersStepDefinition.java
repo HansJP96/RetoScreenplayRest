@@ -11,7 +11,6 @@ import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
-import static org.hamcrest.CoreMatchers.notNullValue;
 
 public class UsersStepDefinition extends ServiceSetUp {
 

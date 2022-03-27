@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Comentarios de usuarios en los post" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-03-26T02:07:56" hostname="LENOVO-PC" time="31.776">
+<testsuite name="Comentarios de usuarios en los post" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-03-27T19:42:50" hostname="LENOVO-PC" time="12.596">
   <properties/>
-  <testcase name="Modificar nombre y cuerpo de un comentario" classname="Comentarios de usuarios en los post" time="28.997"/>
-  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="1.037"/>
-  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="0.661"/>
-  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="1.078"/>
-  <system-out><![CDATA[2022-03-25 21:08:18 INFO  CommonResponse:31 Respuesta de la peticion :
+  <testcase name="Modificar nombre y cuerpo de un comentario" classname="Comentarios de usuarios en los post" time="7.044"/>
+  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="3.623"/>
+  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="1.25"/>
+  <testcase name="Crear un nuevo comentario en un post" classname="Comentarios de usuarios en los post" time="0.677"/>
+  <system-out><![CDATA[2022-03-27 14:42:57 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "name": "Viaje a suiza",
     "body": "Muy divertido y emocionante",
     "id": 10
 }
-2022-03-25 21:08:26 INFO  CommonResponse:31 Respuesta de la peticion :
+2022-03-27 14:43:01 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "postId": 2,
-    "name": "Rerum dolorem explicabo odio asperiores ea eius quasi.",
-    "email": "winston.connelly@hotmail.com",
-    "body": "Animi similique incidunt. Commodi quisquam sed ut. Voluptatem temporibus nihil eveniet soluta cum. Placeat qui possimus fugit.",
+    "name": "Quia et totam non nihil.",
+    "email": "curtis.predovic@hotmail.com",
+    "body": "Nulla quia officia culpa sunt. Dolore voluptatem atque aut et sunt. Quaerat odio eum voluptas.",
     "id": 501
 }
-2022-03-25 21:08:27 INFO  CommonResponse:31 Respuesta de la peticion :
+2022-03-27 14:43:02 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "postId": 4,
-    "name": "Inventore maxime sunt esse rerum itaque neque atque id tempore.",
-    "email": "normand.conn@yahoo.com",
-    "body": "Blanditiis sed velit repellat enim consequatur. Dolorem reiciendis saepe. Natus nihil vero qui autem et quos aspernatur. Eum eum quo corporis.",
+    "name": "Perspiciatis eum sapiente eos ipsum sunt omnis et voluptatem sequi.",
+    "email": "donny.cole@yahoo.com",
+    "body": "Non corporis neque ut debitis voluptatem. Quia est laudantium occaecati deserunt ad quas voluptatem. Molestias laudantium vero.",
     "id": 501
 }
-2022-03-25 21:08:28 INFO  CommonResponse:31 Respuesta de la peticion :
+2022-03-27 14:43:03 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "postId": 6,
-    "name": "Doloremque non maiores ab doloremque beatae deleniti eveniet ut.",
-    "email": "victorina.jerde@hotmail.com",
-    "body": "Quia molestias molestias in et. Sed quis et esse assumenda amet expedita. Sed voluptates id dolorem iure quis natus. Recusandae placeat vitae omnis qui sed ullam quam. Ea expedita vel.",
+    "name": "Eaque facilis quasi non aut alias nobis porro provident.",
+    "email": "karyl.gleichner@yahoo.com",
+    "body": "Possimus voluptatem molestiae vitae quasi eveniet nobis in. Molestiae ut non animi qui rem quia. Eaque est dignissimos fugit. Eligendi molestiae atque occaecati ratione in. Rem est ratione.",
     "id": 501
 }
 ]]></system-out>

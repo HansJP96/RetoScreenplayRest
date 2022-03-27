@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Habilidades de pokemon" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-26T02:08:30" hostname="LENOVO-PC" time="4.526">
+<testsuite name="Habilidades de pokemon" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-27T19:43:05" hostname="LENOVO-PC" time="9.481">
   <properties/>
-  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="0.928"/>
-  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="1.149"/>
-  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="2.447"/>
-  <system-out><![CDATA[2022-03-25 21:08:30 INFO  CommonResponse:31 Respuesta de la peticion :
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="6.428"/>
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="0.863"/>
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="2.19"/>
+  <system-out><![CDATA[2022-03-27 14:43:11 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "effect_changes": [
         {
@@ -927,7 +927,7 @@
         }
     ]
 }
-2022-03-25 21:08:32 INFO  CommonResponse:31 Respuesta de la peticion :
+2022-03-27 14:43:12 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "effect_changes": [
         
@@ -1909,7 +1909,7 @@
         }
     ]
 }
-2022-03-25 21:08:34 INFO  CommonResponse:31 Respuesta de la peticion :
+2022-03-27 14:43:15 INFO  CommonResponse:31 Respuesta de la peticion :
 {
     "effect_changes": [
         {
