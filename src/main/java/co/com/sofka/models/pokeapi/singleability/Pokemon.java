@@ -1,10 +1,24 @@
 package co.com.sofka.models.pokeapi.singleability;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "is_hidden",
+        "slot",
+        "pokemon"
+})
+
 public class Pokemon {
 
-    public Boolean isHidden;
-    public Integer slot;
-    public PokemonPokemon pokemon;
+    @JsonProperty("is_hidden")
+    private Boolean isHidden;
+    @JsonProperty("slot")
+    private Integer slot;
+    @JsonProperty("pokemon")
+    private Pokemon__1 pokemon;
 
     public Boolean getHidden() {
         return isHidden;
@@ -22,11 +36,11 @@ public class Pokemon {
         this.slot = slot;
     }
 
-    public PokemonPokemon getPokemon() {
+    public Pokemon__1 getPokemon() {
         return pokemon;
     }
 
-    public void setPokemon(PokemonPokemon pokemon) {
+    public void setPokemon(Pokemon__1 pokemon) {
         this.pokemon = pokemon;
     }
 }

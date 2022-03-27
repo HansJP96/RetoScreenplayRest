@@ -1,9 +1,21 @@
 package co.com.sofka.models.pokeapi.singleability;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "name",
+        "language"
+})
+
 public class Name {
 
-    public String name;
-    public LanguageName languageName;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("language")
+    private Language language;
 
     public String getName() {
         return name;
@@ -13,11 +25,11 @@ public class Name {
         this.name = name;
     }
 
-    public LanguageName getLanguage() {
-        return languageName;
+    public Language getLanguage() {
+        return language;
     }
 
-    public void setLanguage(LanguageName languageName) {
-        this.languageName = languageName;
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 }

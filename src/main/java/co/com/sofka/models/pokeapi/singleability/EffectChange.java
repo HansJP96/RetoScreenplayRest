@@ -1,27 +1,37 @@
 package co.com.sofka.models.pokeapi.singleability;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.util.List;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "version_group",
+        "effect_entries"
+})
 
 public class EffectChange {
 
-    public VersionGroupEffectChange versionGroupEffectChange;
-    public List<EffectEntryEffectChange> effectEntryEffectChanges = null;
+    @JsonProperty("version_group")
+    private VersionGroup versionGroup;
+    @JsonProperty("effect_entries")
+    private List<EffectEntry__1> effectEntries = null;
 
-
-
-    public VersionGroupEffectChange getVersionGroup() {
-        return versionGroupEffectChange;
+    public VersionGroup getVersionGroup() {
+        return versionGroup;
     }
 
-    public void setVersionGroup(VersionGroupEffectChange versionGroupEffectChange) {
-        this.versionGroupEffectChange = versionGroupEffectChange;
+    public void setVersionGroup(VersionGroup versionGroup) {
+        this.versionGroup = versionGroup;
     }
 
-    public List<EffectEntryEffectChange> getEffectEntryEffectChanges() {
-        return effectEntryEffectChanges;
+    public List<EffectEntry__1> getEffectEntries() {
+        return effectEntries;
     }
 
-    public void setEffectEntryEffectChanges(List<EffectEntryEffectChange> effectEntryEffectChanges) {
-        this.effectEntryEffectChanges = effectEntryEffectChanges;
+    public void setEffectEntries(List<EffectEntry__1> effectEntries) {
+        this.effectEntries = effectEntries;
     }
 }

@@ -1,66 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Habilidades de pokemon" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-24T20:01:12" hostname="LENOVO-PC" time="8.447">
+<testsuite name="Habilidades de pokemon" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-26T02:08:30" hostname="LENOVO-PC" time="4.526">
   <properties/>
-  <testcase name="Pokemon que tiene la habilidad" classname="Habilidades de pokemon" time="8.447">
-    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `co.com.sofka.models.pokeapi.singleability.SingleAbility` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)&#10; at [Source: (String)&quot;{&#10;    &quot;effect_changes&quot;: [&#10;        {&#10;            &quot;effect_entries&quot;: [&#10;                {&#10;                    &quot;effect&quot;: &quot;Hat im Kampf keinen Effekt.&quot;,&#10;                    &quot;language&quot;: {&#10;                        &quot;name&quot;: &quot;de&quot;,&#10;                        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;&#10;                    }&#10;                },&#10;                {&#10;                    &quot;effect&quot;: &quot;Has no effect in battle.&quot;,&#10;                    &quot;language&quot;: {&#10;                        &quot;name&quot;: &quot;en&quot;,&#10;                     &quot;[truncated 31318 chars]; line: 2, column: 5]" type="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `co.com.sofka.models.pokeapi.singleability.SingleAbility` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
- at [Source: (String)&quot;{
-    &quot;effect_changes&quot;: [
-        {
-            &quot;effect_entries&quot;: [
-                {
-                    &quot;effect&quot;: &quot;Hat im Kampf keinen Effekt.&quot;,
-                    &quot;language&quot;: {
-                        &quot;name&quot;: &quot;de&quot;,
-                        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/language/6/&quot;
-                    }
-                },
-                {
-                    &quot;effect&quot;: &quot;Has no effect in battle.&quot;,
-                    &quot;language&quot;: {
-                        &quot;name&quot;: &quot;en&quot;,
-                     &quot;[truncated 31318 chars]; line: 2, column: 5]
-	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
-	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1349)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1415)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
-	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:47)
-	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
-	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:204)
-	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:216)
-	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:57)
-	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:220)
-	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:166)
-	at net.serenitybdd.rest.decorators.ResponseDecorated.as(ResponseDecorated.java:63)
-	at co.com.sofka.question.pokeapi.SingleAbilityResponse.answeredBy(SingleAbilityResponse.java:19)
-	at co.com.sofka.stepdefinition.pokeapi.SingleAbilityStepDefinition.observaQueUnoDeLosPokemonQueTieneEsaHabilidadEs(SingleAbilityStepDefinition.java:42)
-	at ✽.observa que uno de los pokemon que tiene esa habilidad es &quot;gloom&quot;(file:///C:/Users/S410p%20Touch/Documents/5.GuardarLenguajes/Carpeta_Java/Sofka/RetoScreenplay/src/test/resources/features/pokeapi/singleAbility.feature:12)
-</failure>
-  </testcase>
-  <system-out><![CDATA[{
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="0.928"/>
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="1.149"/>
+  <testcase name="Pokemon que posee una habilidad" classname="Habilidades de pokemon" time="2.447"/>
+  <system-out><![CDATA[2022-03-25 21:08:30 INFO  CommonResponse:31 Respuesta de la peticion :
+{
     "effect_changes": [
         {
             "effect_entries": [
@@ -977,6 +922,1903 @@
             "pokemon": {
                 "name": "garbodor-gmax",
                 "url": "https://pokeapi.co/api/v2/pokemon/10207/"
+            },
+            "slot": 1
+        }
+    ]
+}
+2022-03-25 21:08:32 INFO  CommonResponse:31 Respuesta de la peticion :
+{
+    "effect_changes": [
+        
+    ],
+    "effect_entries": [
+        {
+            "effect": "Ein Pokémon mit dieser Fähigkeit kann nicht einschlafen.\n\nrest schlägt fehl. Wenn ein Pokémon schläft und diese Fähigkeit erhält, wacht es sofort auf. Das bezieht das Wiedererlangen dieser Fähigkeit nach dem Kampf mit ein.\n\nDiese Fähigkeit ist identisch mit vital spirit.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "short_effect": "Verhindert sleep."
+        },
+        {
+            "effect": "This Pokémon cannot be asleep.\n\nThis causes rest to fail altogether.  If a Pokémon is asleep and acquires this ability, it will immediately wake up; this includes when regaining a lost ability upon leaving battle.\n\nThis ability functions identically to vital spirit in battle.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "short_effect": "Prevents sleep."
+        }
+    ],
+    "flavor_text_entries": [
+        {
+            "flavor_text": "Prevents sleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "ruby-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/5/"
+            }
+        },
+        {
+            "flavor_text": "Prevents sleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "emerald",
+                "url": "https://pokeapi.co/api/v2/version-group/6/"
+            }
+        },
+        {
+            "flavor_text": "Prevents sleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "firered-leafgreen",
+                "url": "https://pokeapi.co/api/v2/version-group/7/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "platinum",
+                "url": "https://pokeapi.co/api/v2/version-group/9/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "heartgold-soulsilver",
+                "url": "https://pokeapi.co/api/v2/version-group/10/"
+            }
+        },
+        {
+            "flavor_text": "Empêche le Pokémon de\ns’endormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "black-2-white-2",
+                "url": "https://pokeapi.co/api/v2/version-group/14/"
+            }
+        },
+        {
+            "flavor_text": "??????????\n?????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "?? ???\n?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Empêche le Pokémon de\ns’endormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Evita el quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Impedisce al Pokémon\ndi addormentarsi.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "??????\n?????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "??????????\n?????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "?? ???\n?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Empêche le Pokémon de\ns’endormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Evita el quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Impedisce al Pokémon\ndi addormentarsi.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Prevents the Pokémon\nfrom falling asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "??????\n?????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "??????????????\n????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "??? ??? ????\n?? ??? ?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n???????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Le Pokémon est incapable de dormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Su resistencia al sueño le impide quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Il Pokémon soffre d’insonnia e non può finire\naddormentato.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "The Pokémon is suffering from insomnia and cannot\nfall asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n???????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "??????????????\n????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "??? ??? ????\n?? ??? ?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n???????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Le Pokémon est incapable de dormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Su resistencia al sueño le impide quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Il Pokémon soffre d’insonnia e non può finire\naddormentato.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "The Pokémon is suffering from insomnia and cannot\nfall asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n???????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "??????????????\n????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "??? ??? ????\n?? ??? ?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n???????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Le Pokémon est incapable de dormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Su resistencia al sueño le impide quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Il Pokémon soffre d’insonnia e non può finire\naddormentato.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "The Pokémon is suffering from insomnia and cannot\nfall asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n???????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "??????????????\n????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "??? ??? ????\n?? ??? ?? ???.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n???????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Le Pokémon est incapable de dormir.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Verhindert Einschlafen.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Su resistencia al sueño le impide quedarse dormido.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Il Pokémon soffre d’insonnia e non può addormentarsi.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "The Pokémon is suffering from insomnia and cannot\nfall asleep.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "???????????\n???????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        }
+    ],
+    "generation": {
+        "name": "generation-iii",
+        "url": "https://pokeapi.co/api/v2/generation/3/"
+    },
+    "id": 15,
+    "is_main_series": true,
+    "name": "insomnia",
+    "names": [
+        {
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "name": "???"
+        },
+        {
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "name": "??"
+        },
+        {
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "name": "??"
+        },
+        {
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "name": "Insomnia"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "name": "Insomnia"
+        },
+        {
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "name": "Insomnio"
+        },
+        {
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "name": "Insonnia"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "name": "Insomnia"
+        },
+        {
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "name": "???"
+        },
+        {
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "name": "??"
+        }
+    ],
+    "pokemon": [
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "drowzee",
+                "url": "https://pokeapi.co/api/v2/pokemon/96/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "hypno",
+                "url": "https://pokeapi.co/api/v2/pokemon/97/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "hoothoot",
+                "url": "https://pokeapi.co/api/v2/pokemon/163/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "noctowl",
+                "url": "https://pokeapi.co/api/v2/pokemon/164/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "spinarak",
+                "url": "https://pokeapi.co/api/v2/pokemon/167/"
+            },
+            "slot": 2
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "ariados",
+                "url": "https://pokeapi.co/api/v2/pokemon/168/"
+            },
+            "slot": 2
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "murkrow",
+                "url": "https://pokeapi.co/api/v2/pokemon/198/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "delibird",
+                "url": "https://pokeapi.co/api/v2/pokemon/225/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "shuppet",
+                "url": "https://pokeapi.co/api/v2/pokemon/353/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "banette",
+                "url": "https://pokeapi.co/api/v2/pokemon/354/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "honchkrow",
+                "url": "https://pokeapi.co/api/v2/pokemon/430/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "pumpkaboo-average",
+                "url": "https://pokeapi.co/api/v2/pokemon/710/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "gourgeist-average",
+                "url": "https://pokeapi.co/api/v2/pokemon/711/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "pumpkaboo-small",
+                "url": "https://pokeapi.co/api/v2/pokemon/10027/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "pumpkaboo-large",
+                "url": "https://pokeapi.co/api/v2/pokemon/10028/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "pumpkaboo-super",
+                "url": "https://pokeapi.co/api/v2/pokemon/10029/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "gourgeist-small",
+                "url": "https://pokeapi.co/api/v2/pokemon/10030/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "gourgeist-large",
+                "url": "https://pokeapi.co/api/v2/pokemon/10031/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "gourgeist-super",
+                "url": "https://pokeapi.co/api/v2/pokemon/10032/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "mewtwo-mega-y",
+                "url": "https://pokeapi.co/api/v2/pokemon/10044/"
+            },
+            "slot": 1
+        }
+    ]
+}
+2022-03-25 21:08:34 INFO  CommonResponse:31 Respuesta de la peticion :
+{
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "electric-Attacken die keinen Schaden anrichten, wie thunder wave, werden nicht absorbiert.",
+                    "language": {
+                        "name": "de",
+                        "url": "https://pokeapi.co/api/v2/language/6/"
+                    }
+                },
+                {
+                    "effect": "Does not absorb non-damaging electric moves, i.e. thunder wave.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        }
+    ],
+    "effect_entries": [
+        {
+            "effect": "Wenn ein Pokémon mit dieser Fähigkeit von einer electric Attacke getroffen wird, wird es um 1/4 seiner maximalen hp geheilt. Jeder andere Effekt der Attacke wird ignoriert.\n\nDie Fähigkeit wirkt nicht, wenn das Pokémon vom Typ ground ist. electric Attacken ignorieren den substitute dieses Pokémons.\n\nDer Effekt gilt auch für Attacken die keinen Schaden verursachen, wie z.B. thunder wave.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "short_effect": "Absorbiert electric Attacken und heilt 1/4 der max hp."
+        },
+        {
+            "effect": "Whenever an electric-type move hits this Pokémon, it heals for 1/4 of its maximum HP, negating any other effect on it.\n\nThis ability will not take effect if this Pokémon is ground-type and thus immune to Electric moves.  Electric moves will ignore this Pokémon's substitute.\n\nThis effect includes non-damaging moves, i.e. thunder wave.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "short_effect": "Absorbs electric moves, healing for 1/4 max HP."
+        }
+    ],
+    "flavor_text_entries": [
+        {
+            "flavor_text": "Turns electricity into HP.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "ruby-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/5/"
+            }
+        },
+        {
+            "flavor_text": "Turns electricity into HP.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "emerald",
+                "url": "https://pokeapi.co/api/v2/version-group/6/"
+            }
+        },
+        {
+            "flavor_text": "Turns electricity into HP.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "firered-leafgreen",
+                "url": "https://pokeapi.co/api/v2/version-group/7/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "platinum",
+                "url": "https://pokeapi.co/api/v2/version-group/9/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "heartgold-soulsilver",
+                "url": "https://pokeapi.co/api/v2/version-group/10/"
+            }
+        },
+        {
+            "flavor_text": "Récupère des PV si touché\npar une capacité Électrik.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "black-2-white-2",
+                "url": "https://pokeapi.co/api/v2/version-group/14/"
+            }
+        },
+        {
+            "flavor_text": "?????????\n???????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "??? ???\n????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Récupère des PV si touché par\nune capacité Électrik.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken\nregenerieren KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Recupera PS al recibir ataques de\ntipo Eléctrico.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Ridà PS se il Pokémon subisce\nuna mossa di tipo Elettro.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "?????????\n?????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "x-y",
+                "url": "https://pokeapi.co/api/v2/version-group/15/"
+            }
+        },
+        {
+            "flavor_text": "?????????\n???????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "??? ???\n????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Récupère des PV si touché par\nune capacité Électrik.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken\nregenerieren KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Recupera PS al recibir ataques de\ntipo Eléctrico.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Ridà PS se il Pokémon subisce\nuna mossa di tipo Elettro.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an\nElectric-type move.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "?????????\n?????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "omega-ruby-alpha-sapphire",
+                "url": "https://pokeapi.co/api/v2/version-group/16/"
+            }
+        },
+        {
+            "flavor_text": "????????????????\n??????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "????? ??? ???\n???? ?? ?? ????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Si le Pokémon est touché par une capacité Électrik,\nil ne subit aucun dégât et regagne des PV à la place.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken verursachen keinen\nSchaden, sondern regenerieren stattdessen KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Si le alcanza un movimiento de tipo Eléctrico,\nrecupera PS en vez de sufrir daño.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Se il Pokémon subisce una mossa di tipo Elettro,\nrecupera PS anziché subire danni.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an Electric-type move, instead\nof taking damage.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "???????????????\n????????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "sun-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/17/"
+            }
+        },
+        {
+            "flavor_text": "????????????????\n??????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "????? ??? ???\n???? ?? ?? ????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Si le Pokémon est touché par une capacité Électrik,\nil ne subit aucun dégât et regagne des PV à la place.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken verursachen keinen\nSchaden, sondern regenerieren stattdessen KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Si le alcanza un movimiento de tipo Eléctrico,\nrecupera PS en vez de sufrir daño.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Se il Pokémon subisce una mossa di tipo Elettro,\nrecupera PS anziché subire danni.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an Electric-type move, instead\nof taking damage.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "???????????????\n????????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "ultra-sun-ultra-moon",
+                "url": "https://pokeapi.co/api/v2/version-group/18/"
+            }
+        },
+        {
+            "flavor_text": "????????????????\n??????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "????? ??? ???\n???? ?? ?? ????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Si le Pokémon est touché par une capacité Électrik,\nil ne subit aucun dégât et regagne des PV à la place.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken verursachen keinen\nSchaden, sondern regenerieren stattdessen KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Si le alcanza un movimiento de tipo Eléctrico,\nrecupera PS en vez de sufrir daño.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Se il Pokémon subisce una mossa di tipo Elettro,\nrecupera PS anziché subire danni.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an Electric-type move instead\nof taking damage.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "???????????????\n????????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "lets-go-pikachu-lets-go-eevee",
+                "url": "https://pokeapi.co/api/v2/version-group/19/"
+            }
+        },
+        {
+            "flavor_text": "????????????????\n??????????????????",
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "????? ??? ???\n???? ?? ?? ????.",
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Si le Pokémon est touché par une capacité Électrik,\nil ne subit aucun dégât et regagne des PV à la place.",
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Treffer durch Elektro-Attacken verursachen keinen\nSchaden, sondern regenerieren stattdessen KP.",
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Si le alcanza un movimiento de tipo Eléctrico, recupera\nPS en vez de sufrir daño.",
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Se il Pokémon viene colpito da una mossa di tipo\nElettro, recupera PS anziché subire danni.",
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "Restores HP if hit by an Electric-type move instead\nof taking damage.",
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "???????????????\n????????????????",
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        },
+        {
+            "flavor_text": "????????????\n?????????????",
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "version_group": {
+                "name": "sword-shield",
+                "url": "https://pokeapi.co/api/v2/version-group/20/"
+            }
+        }
+    ],
+    "generation": {
+        "name": "generation-iii",
+        "url": "https://pokeapi.co/api/v2/generation/3/"
+    },
+    "id": 10,
+    "is_main_series": true,
+    "name": "volt-absorb",
+    "names": [
+        {
+            "language": {
+                "name": "ja-Hrkt",
+                "url": "https://pokeapi.co/api/v2/language/1/"
+            },
+            "name": "????"
+        },
+        {
+            "language": {
+                "name": "ko",
+                "url": "https://pokeapi.co/api/v2/language/3/"
+            },
+            "name": "??"
+        },
+        {
+            "language": {
+                "name": "zh-Hant",
+                "url": "https://pokeapi.co/api/v2/language/4/"
+            },
+            "name": "??"
+        },
+        {
+            "language": {
+                "name": "fr",
+                "url": "https://pokeapi.co/api/v2/language/5/"
+            },
+            "name": "Absorbe-Volt"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "https://pokeapi.co/api/v2/language/6/"
+            },
+            "name": "Voltabsorber"
+        },
+        {
+            "language": {
+                "name": "es",
+                "url": "https://pokeapi.co/api/v2/language/7/"
+            },
+            "name": "Absorbe Elec"
+        },
+        {
+            "language": {
+                "name": "it",
+                "url": "https://pokeapi.co/api/v2/language/8/"
+            },
+            "name": "Assorbivolt"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "https://pokeapi.co/api/v2/language/9/"
+            },
+            "name": "Volt Absorb"
+        },
+        {
+            "language": {
+                "name": "ja",
+                "url": "https://pokeapi.co/api/v2/language/11/"
+            },
+            "name": "????"
+        },
+        {
+            "language": {
+                "name": "zh-Hans",
+                "url": "https://pokeapi.co/api/v2/language/12/"
+            },
+            "name": "??"
+        }
+    ],
+    "pokemon": [
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "jolteon",
+                "url": "https://pokeapi.co/api/v2/pokemon/135/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "chinchou",
+                "url": "https://pokeapi.co/api/v2/pokemon/170/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "lanturn",
+                "url": "https://pokeapi.co/api/v2/pokemon/171/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "minun",
+                "url": "https://pokeapi.co/api/v2/pokemon/312/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": true,
+            "pokemon": {
+                "name": "pachirisu",
+                "url": "https://pokeapi.co/api/v2/pokemon/417/"
+            },
+            "slot": 3
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "zeraora",
+                "url": "https://pokeapi.co/api/v2/pokemon/807/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "dracozolt",
+                "url": "https://pokeapi.co/api/v2/pokemon/880/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "arctozolt",
+                "url": "https://pokeapi.co/api/v2/pokemon/881/"
+            },
+            "slot": 1
+        },
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "thundurus-therian",
+                "url": "https://pokeapi.co/api/v2/pokemon/10020/"
             },
             "slot": 1
         }

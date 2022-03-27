@@ -2,75 +2,11 @@
 <testsuite name="co.com.sofka.runners.pokeapi.SingleAbilityTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LENOVO-PC" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[31mFailed scenarios:?[0m
-?[31mfile:///C:/Users/S410p%20Touch/Documents/5.GuardarLenguajes/Carpeta_Java/Sofka/RetoScreenplay/src/test/resources/features/pokeapi/singleAbility.feature:9?[0m# Pokemon que tiene la habilidad
-
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-0m8,797s
-
-
-com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `co.com.sofka.models.pokeapi.singleability.SingleAbility` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
- at [Source: (String)"{
-    "effect_changes": [
-        {
-            "effect_entries": [
-                {
-                    "effect": "Hat im Kampf keinen Effekt.",
-                    "language": {
-                        "name": "de",
-                        "url": "https://pokeapi.co/api/v2/language/6/"
-                    }
-                },
-                {
-                    "effect": "Has no effect in battle.",
-                    "language": {
-                        "name": "en",
-                     "[truncated 31318 chars]; line: 2, column: 5]
-	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
-	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1349)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1415)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
-	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:47)
-	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
-	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:204)
-	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:216)
-	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:57)
-	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:220)
-	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:166)
-	at net.serenitybdd.rest.decorators.ResponseDecorated.as(ResponseDecorated.java:63)
-	at co.com.sofka.question.pokeapi.SingleAbilityResponse.answeredBy(SingleAbilityResponse.java:19)
-	at co.com.sofka.stepdefinition.pokeapi.SingleAbilityStepDefinition.observaQueUnoDeLosPokemonQueTieneEsaHabilidadEs(SingleAbilityStepDefinition.java:42)
-	at ?.observa que uno de los pokemon que tiene esa habilidad es "gloom"(file:///C:/Users/S410p%20Touch/Documents/5.GuardarLenguajes/Carpeta_Java/Sofka/RetoScreenplay/src/test/resources/features/pokeapi/singleAbility.feature:12)
+3 Scenarios (?[32m3 passed?[0m)
+9 Steps (?[32m9 passed?[0m)
+0m4,531s
 
 
 ]]></system-out>
-  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
